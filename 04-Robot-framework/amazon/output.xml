@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.6 on darwin)" generated="2024-02-10T22:13:40.687692" rpa="false" schemaversion="5">
+<suite id="s1" name="Amazon" source="/Users/phanupong/Downloads/robot-framework/amazon/Tests/Amazon.robot">
+<test id="s1-t1" name="User can search for products" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-10T22:13:40.755514" level="INFO">Opening browser 'chrome' to base url 'http://www.codinggun.com'.</msg>
+<arg>http://www.codinggun.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-10T22:13:40.755413" elapsed="1.998213"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Microservices</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-10T22:13:42.754106" elapsed="0.012853"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-10T22:13:42.767440" level="INFO">Clicking element 'xpath:/html/body/header/ul/li[4]/span'.</msg>
+<arg>xpath:/html/body/header/ul/li[4]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-10T22:13:42.767155" elapsed="0.060388"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-10T22:13:42.827958" level="INFO">Typing text 'docker' into text field 'xpath=/html/body/div/div/input'.</msg>
+<arg>xpath=/html/body/div/div/input</arg>
+<arg>docker</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-10T22:13:42.827796" elapsed="0.121567"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-02-10T22:13:42.949859" level="INFO">Sending key(s) ('RETURN',) to xpath:/html/body/header/ul/li[4]/span element.</msg>
+<msg time="2024-02-10T22:13:43.244296" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2024-02-10T22:13:43.244404" level="INFO">Releasing special key RETURN.</msg>
+<arg>xpath:/html/body/header/ul/li[4]/span</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-02-10T22:13:42.949567" elapsed="0.298978"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Docker Image</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-10T22:13:43.248806" elapsed="0.009191"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-10T22:13:43.258198" elapsed="0.075871"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Demo</tag>
+<status status="PASS" start="2024-02-10T22:13:40.754924" elapsed="2.579359"/>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="PASS" start="2024-02-10T22:13:40.688226" elapsed="2.646380"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Demo</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
